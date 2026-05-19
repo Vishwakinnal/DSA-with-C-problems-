@@ -14,7 +14,7 @@ struct node
 {
     EMP info;
     struct node*lptr;
-    struct node* rptr;
+    struct node*rptr;
 };
 typedef struct node* Node;
 Node front=NULL,rear=NULL;
@@ -87,7 +87,6 @@ void Fdelete()
     if(front==NULL)
     {
         printf("list is empty\n");
-
     }
     else
     {
@@ -96,6 +95,7 @@ void Fdelete()
         printf("SSN\tNAME\tBRANCH\tDESIGNATION\tSALARY\tPHONE NUMBER\n");
         displayRec(temp->info);
         front=front->rptr;
+        
         if(front!=NULL)
         {
             front->lptr=NULL;
@@ -181,7 +181,7 @@ int main()
                 display();
                 break;
             case 6:
-                exit(0);
+                exit(0)
                 break;
             default:
                 flag=0;

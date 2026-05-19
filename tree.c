@@ -93,7 +93,6 @@ int main()
     int ch, key, flag=1;
     int a[] = {6, 9, 5, 2, 8, 15, 24, 14, 7, 8, 5, 2};
     int n = 12;
-    printf("\n1.Create BST\n2.Inorder\n3.Preorder\n4.Postorder\n5.Search\n6.Exit\n");
     while (flag)
     {
         printf("\n1.Create BST\n2.Inorder\n3.Preorder\n4.Postorder\n5.Search\n6.Exit\n");

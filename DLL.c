@@ -9,7 +9,6 @@ struct student
     int sem;
     char phno[15];
 };
-
 typedef struct student STU;
 
 struct node
@@ -17,7 +16,6 @@ struct node
     STU info;
     struct node *link;
 };
-
 typedef struct node *Node;
 
 /* Function to get student data */
@@ -128,7 +126,6 @@ Node Fdelete(Node first)
     temp = first;
     printf("Deleted Record:\n");
     displayRec(temp->info);
-
     first = first->link;
     free(temp);
     return first;
@@ -138,7 +135,6 @@ Node Fdelete(Node first)
 Node Edelete(Node first)
 {
     Node temp, prev;
-
     if (first == NULL)
     {
         printf("List is empty\n");

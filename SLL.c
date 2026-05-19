@@ -206,6 +206,7 @@ int main() //   main function
                 break;
             case 7:
                 exit(0);
+                break;
             default:
                 flag=0;
                 break;
